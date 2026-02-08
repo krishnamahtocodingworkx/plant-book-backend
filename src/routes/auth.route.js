@@ -9,7 +9,7 @@ import {
   signup,
   verifyEmail,
   verifyOtp,
-} from "../controllers/user.controller.js";
+} from "../controllers/auth.controller.js";
 import {
   loginSchema,
   resetPasswordSchema,
