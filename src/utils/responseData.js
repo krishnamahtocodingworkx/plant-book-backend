@@ -145,6 +145,7 @@ export const ExceptionMessage = Object.freeze({
     "You have exceeded the maximum number of edit attempts for this post.",
   EDIT_TIME_EXCEEDED: "You have exceeded the time limit for editing this post.",
   PET_OWNER_ACCOUNT_DELETED: "Pet owner account deleted.",
+  USER_NOT_FOUND:"User not found.",
 });
 
 export const SuccessMessage = Object.freeze({

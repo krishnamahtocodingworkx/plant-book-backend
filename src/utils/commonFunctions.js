@@ -23,7 +23,9 @@ export const hashData = (data, salt = CONSTANT.PASSWORD_HASH_SALT) => {
 };
 
 export const generateToken = (tokenData) => {
-  const token = jwt.sign(tokenData, JWT_SECRET);
+  const token = jwt.sign(tokenData, JWT_SECRET, {
+    expiresIn: CONSTANT.JWT_EXPIRATION_TIME,
+  });
   return token;
 };
 export const validate = (schema, source = REQUEST_OBJECT.BODY) => {
