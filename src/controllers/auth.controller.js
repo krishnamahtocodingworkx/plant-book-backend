@@ -20,6 +20,7 @@ import { forgotOtpTemplate } from "../templates/forgotOtpTemplate.js";
 // Controller for user signup and sending verification OTP
 export const signup = async (req, res) => {
   try {
+    console.log("signup")
     const { name, email, password, role } = req.body;
     const emailInLowercase = email.toLowerCase();
     const userAlreadyExist = await User.findOne({ email: emailInLowercase });
