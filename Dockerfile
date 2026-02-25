@@ -1,5 +1,5 @@
 # 1️⃣ Use official Node image
-FROM node:20-alpine
+FROM node:22-alpine
 
 # 2️⃣ Create app directory
 WORKDIR /app
