@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: plant-book-backend
+    ports:
+      - "9000:9000"
+    env_file:
+      - .env
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    restart: unless-stopped
