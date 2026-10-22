@@ -27,7 +27,7 @@ authRoute.post("/login", validate(loginSchema), loginUser);
 authRoute.post(
   "/forgot-password",
   validate(verifyEmailOnlySchema),
-  forgotPassword
+  forgotPassword,
 );
 authRoute.post("/verify-otp", validate(verifyEmailSchema), verifyOtp);
 authRoute.post("/reset-password", validate(resetPasswordSchema), resetPassword);
