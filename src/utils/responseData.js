@@ -211,4 +211,5 @@ export const SuccessMessage = Object.freeze({
   NOTIFICATION_DELETED: "Notification has been deleted successfully.",
   CHAT_DELETED: "User's chat has been deleted successfully.",
   USER_PROFILE: "User profile has been sent successfully",
+  USER_PROFILE_POST: "User profile post has been sent successfully",
 });

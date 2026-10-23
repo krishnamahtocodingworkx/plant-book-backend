@@ -1,15 +1,18 @@
-import User from "../models/User";
-import { successResponse } from "../utils/commonFunctions";
+import User from "../models/User.js";
+import { successResponse } from "../utils/commonFunctions.js";
 import {
   ExceptionMessage,
   HttpStatusCode,
   HttpStatusMessage,
   SuccessMessage,
-} from "../utils/responseData";
+} from "../utils/responseData.js";
 
 export const getUserProfile = async (req, res) => {
   try {
-    const user = await User.findById(req.user._id);
+    const user = await User.findById(req.user._id, {
+      token: 0,
+      password: 0,
+    });
 
     return res
       .status(HttpStatusCode.OK)

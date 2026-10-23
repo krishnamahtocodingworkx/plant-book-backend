@@ -28,19 +28,28 @@ export const generateToken = (tokenData) => {
   });
   return token;
 };
+
 export const validate = (schema, source = REQUEST_OBJECT.BODY) => {
   return async (req, res, next) => {
     try {
       const validated = await schema.validateAsync(req[source], {
         abortEarly: false,
+        convert: true,
       });
-      req[source] = validated;
-      next();
+
+      req.validated ??= {};
+      req.validated[source] = validated;
+
+      return next();
     } catch (err) {
-      res.status(400).json({
+      const errors = err.details
+        ? err.details.map((e) => e.message)
+        : [err.message];
+
+      return res.status(400).json({
         code: 400,
         message: "Validation failed",
-        errors: err.details.map((e) => e.message),
+        errors,
       });
     }
   };
