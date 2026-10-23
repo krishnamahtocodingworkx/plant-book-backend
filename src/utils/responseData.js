@@ -212,4 +212,6 @@ export const SuccessMessage = Object.freeze({
   CHAT_DELETED: "User's chat has been deleted successfully.",
   USER_PROFILE: "User profile has been sent successfully",
   USER_PROFILE_POST: "User profile post has been sent successfully",
+  POST_LIKE_UPDATED: "Post Like has been updated",
+  LIKE_LIST: "All Likes has been sent successfully",
 });

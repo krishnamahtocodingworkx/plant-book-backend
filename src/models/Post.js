@@ -20,6 +20,7 @@ const PostSchema = new mongoose.Schema(
           enum: ["image", "video"],
           required: true,
         },
+        _id: false,
       },
     ],
 

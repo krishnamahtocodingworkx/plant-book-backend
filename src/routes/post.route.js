@@ -17,7 +17,7 @@ postRouter.post(
 
 postRouter.get(
   "/profile/:userId",
-  validate(userIdParamsValidation, REQUEST_OBJECT.PARAMS),
+  validate(userIdParamsValidation, REQUEST_OBJECT.PARAM),
   validate(getProfilePostQuerySchema, REQUEST_OBJECT.QUERY),
   PostController.getMyAllPosts,
 );

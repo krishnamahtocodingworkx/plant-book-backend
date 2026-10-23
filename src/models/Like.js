@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 const LikeSchema = new mongoose.Schema(
   {
     postId: {
