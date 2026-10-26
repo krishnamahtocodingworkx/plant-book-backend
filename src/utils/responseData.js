@@ -146,6 +146,7 @@ export const ExceptionMessage = Object.freeze({
   EDIT_TIME_EXCEEDED: "You have exceeded the time limit for editing this post.",
   PET_OWNER_ACCOUNT_DELETED: "Pet owner account deleted.",
   USER_NOT_FOUND: "User not found.",
+  SEARCH_USER: "Search query is required",
 });
 
 export const SuccessMessage = Object.freeze({
@@ -215,4 +216,5 @@ export const SuccessMessage = Object.freeze({
   USER_PROFILE_POST: "User profile post has been sent successfully",
   POST_LIKE_UPDATED: "Post Like has been updated",
   LIKE_LIST: "All Likes has been sent successfully",
+  USER_FETCHED: "Users fetched successfully",
 });
