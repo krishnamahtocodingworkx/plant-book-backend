@@ -168,6 +168,7 @@ export const SuccessMessage = Object.freeze({
   POST_UPDATED: "Post has been updated successfully!",
   LIKE_UPDATED: "Like has been updated successfully!",
   COMMENT_ADDED: "Comment has been added successfully!",
+  COMMENT_LIST: "Comment has been sent successfully!",
   CMS_CREATED: "CMS has been added successfully!",
   FAQ_ADDED: "FAQ has been added successfully!",
   CMS_EDITED: "CMS has been updated successfully!",
